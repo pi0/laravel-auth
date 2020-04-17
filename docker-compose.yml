@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  laravel-auth:
+    image: banian/php
+    volumes:
+      - .:/var/www/src
+    ports:
+      - "8080:80"
+    restart: always
