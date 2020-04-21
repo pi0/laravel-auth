@@ -24,3 +24,7 @@ Route::group(['namespace' => 'JWT', 'prefix' => 'auth/jwt'], function ($router) 
     Route::post('refresh', 'AuthController@refresh');
     Route::get('user', 'AuthController@user');
 });
+
+Route::group(['namespace' => 'Passport', 'prefix' => 'auth/passport'], function ($router) {
+    Route::get('user', 'AuthController@user');
+});
