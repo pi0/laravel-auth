@@ -1,1 +1,2 @@
 touch database.sqlite
+php artisan jwt:secret
