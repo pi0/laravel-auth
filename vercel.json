@@ -16,7 +16,7 @@
     }
   ],
   "env": {
-    "APP_URL": "https://laravel-auth.pi0.vercel.app/",
+    "APP_FORCE_HTTPS": "true",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
