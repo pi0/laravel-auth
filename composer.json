@@ -56,7 +56,9 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "touch .env database/database.sqlite",
+            "touch .env database/database.sqlite"
+        ],
+        "post-install-cmd": [
             "@php artisan key:generate",
             "@php artisan db:wipe --force",
             "@php artisan migrate --force",
