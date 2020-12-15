@@ -58,7 +58,7 @@
             "@php artisan package:discover --ansi",
             "touch .env database/database.sqlite"
         ],
-        "post-install-cmd": [
+        "vercel": [
             "@php artisan key:generate",
             "@php artisan db:wipe --force",
             "@php artisan migrate --force",
