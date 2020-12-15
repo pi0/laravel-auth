@@ -56,8 +56,12 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "touch database.sqlite",
-            "@php artisan jwt:secret"
+            "touch database/database.sqlite",
+            "@php artisan key:generate",
+            "@php artisan db:wipe",
+            "@php artisan migrate",
+            "@php artisan jwt:secret -f",
+            "@php artisan passport:install"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
