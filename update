@@ -1,6 +1,3 @@
 touch .env database/database.sqlite
-php artisan key:generate --force
-php artisan db:wipe --force
-php artisan migrate --force
-php artisan jwt:secret --force
+php artisan migrate
 php artisan passport:install
