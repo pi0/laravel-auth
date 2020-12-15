@@ -59,11 +59,7 @@
             "touch .env database/database.sqlite"
         ],
         "vercel": [
-            "@php artisan key:generate",
-            "@php artisan db:wipe --force",
-            "@php artisan migrate --force",
-            "@php artisan jwt:secret --force",
-            "@php artisan passport:install"
+            "./update"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
