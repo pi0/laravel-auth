@@ -55,8 +55,7 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi",
-            "touch .env database/database.sqlite"
+            "@php artisan package:discover --ansi"
         ],
         "vercel": [
             "./update"
